@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/backgroundTwo"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:text="HYDRAULIC PENDORONG TROLLEY"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Tanggal"
+                    app:endIconMode="custom"
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentTanggalMesin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawablePadding="10dp"
+                        android:id="@+id/editTanggalMesin"
+                        android:textSize="15sp"
+                        android:background="@color/buttonAll"
+                        android:inputType="none"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Power Pack"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentPowerPack"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editPowerPack"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Seal Piston"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentSealPiston"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSealPiston"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bearing dan Roda"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBearingdanRoda"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBearingRoda"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Pipa Hydarulic"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentPipaHydarulic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editPipaHydraulic"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Selang Hydraulic"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentSelangHydraulic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSelangHydraulic"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bagian Yang Karat"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBagianKarat"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBagianKarat"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Kelainan Suara Mesin"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentKelainanSuaraMesin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSuaraMesin"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cetak PDF"
+                    android:textStyle="bold"
+                    android:id="@+id/cetakPdf"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/buttonAll"
+                    app:cornerRadius="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/backgroundTwo"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:text="HYDRAULIC PRESS 1,2,3"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Tanggal"
+                    app:endIconMode="custom"
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentTanggalMesin2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawablePadding="10dp"
+                        android:id="@+id/editTanggalMesin2"
+                        android:textSize="15sp"
+                        android:background="@color/buttonAll"
+                        android:inputType="none"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Power Pack"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentPowerPack1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editPowerPack1"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Seal Piston"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentSealPiston2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSealPiston2"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Tutup Press"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentTutupPress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editTutupPress"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bandulan Pemberat"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBandulanPemberat"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBandulanPemberat"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Penahan Tutup Press"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentPenahanTutupPress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editPenahanTutupPress"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bagian Yang Karat"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBagianKarat2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBagianKarat2"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Kelainan Suara Mesin"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentKelainanSuaraMesin2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSuaraMesin2"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cetak PDF"
+                    android:textStyle="bold"
+                    android:id="@+id/cetakPdf2"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/buttonAll"
+                    app:cornerRadius="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/backgroundTwo"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:text="CHAIN CONVEYOUR"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Tanggal"
+                    app:endIconMode="custom"
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentTanggalMesin3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawablePadding="10dp"
+                        android:id="@+id/editTanggalMesin3"
+                        android:textSize="15sp"
+                        android:background="@color/buttonAll"
+                        android:inputType="none"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Gear Motor"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentGearMotor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editGearMotor"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bearing"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBearing1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBearing1"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Rel Conveyor"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentRelConveyor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editRelConveyor"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Gear Spoket (Rantai)"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentGearSpoket"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editGearSpoket"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Rantai Conveyor"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentRantaiConveyor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editRantaiConveyor"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Bagian Yang Karat"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentBagianKarat3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editBagianKarat3"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:textColorHint="@color/textColorCustom"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeWidth="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:hint="Kelainan Suara Mesin"
+                    app:boxCornerRadiusBottomEnd="5dp"
+                    app:boxCornerRadiusBottomStart="5dp"
+                    app:boxCornerRadiusTopEnd="5dp"
+                    app:boxCornerRadiusTopStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxStrokeColor="@android:color/black"
+                    android:id="@+id/parentKelainanSuaraMesin3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <AutoCompleteTextView
+                        android:padding="18dp"
+                        android:id="@+id/editSuaraMesin3"
+                        android:backgroundTint="@color/buttonAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cetak PDF"
+                    android:textStyle="bold"
+                    android:id="@+id/cetakPdf3"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/buttonAll"
+                    app:cornerRadius="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

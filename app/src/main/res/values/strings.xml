@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Preventive Maintenance Mesin</string>
+    <string name="mailing_a">Miling A</string>
+    <string name="mailing_b">Miling B</string>
+    <string name="mailing_c">Miling C</string>
+    <string name="mailing_d">Miling D</string>
+    <string name="crumb">Crumb</string>
+    <string name="mailing_e">Miling E</string>
+    <string name="mailing_f">Miling F</string>
+    <string name="mailing_g">Miling G</string>
+
+    <string name="name_mesin1">CREEPER-1</string>
+    <string name="name_mesin2">CREEPER-2</string>
+    <string name="name_mesin3">CREEPER-3</string>
+    <string name="name_mesin4">CREEPER-4A</string>
+    <string name="name_mesin5">CREEPER-4B</string>
+    <string name="name_mesin6">CREEPER-5A</string>
+    <string name="name_mesin7">CREEPER-5B</string>
+    <string name="name_mesin8">CREEPER-5C</string>
+    <string name="name_mesin9">CREEPER-5D</string>
+
+
+    <string-array name="opsi">
+        <item>Baik</item>
+        <item>Kurang Baik</item>
+    </string-array>
+</resources>
